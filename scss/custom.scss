@@ -1,8 +1,17 @@
 
 // colours:
 $primary: #EF8BC5;
+$secondary: #FFB100;
 $light: #FEE9EE;
 
 
+
+// cards:
+$card-border-color: $primary;
+$card-bg: $light;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+img {
+    max-width: 60px;
+}

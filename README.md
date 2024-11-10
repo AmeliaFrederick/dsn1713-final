@@ -1,6 +1,7 @@
 # dsn1713-final
-
+Assignment Instructions:
 Getting Started
+
 Begin by setting up a new GitHub repository for this project called dsn1713-final. Remember to enable GH pages so that you can view your site live on Github.
 Clone your new repository down to your local environment and open your project in VS Code.
 You are free to decide how you would like to setup Bootstrap:
