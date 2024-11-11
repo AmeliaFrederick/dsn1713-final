@@ -11,9 +11,10 @@
  <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        
+      <nav class="navbar navbar-expand-lg bg-light">
             <div class="container px-4">
-              <a class="navbar-brand" href="index.html">Navbar</a>
+              <a class="navbar-brand" href="index.html"><img src="images/toronto-cupcake-logo.png" alt="toronto cupcake logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,42 +30,67 @@
                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li>
-                    <button type="button" class="btn btn-primary"><img src="images/shopping-cart-icon.svg" alt="shopping cart icon"> Primary</button>
+                    <button type="button" class="btn btn-primary"><img src="images/shopping-cart-icon.svg" alt="shopping cart icon">View Cart</button>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
+
     </header>
 
    
     <main>
         
         <section id="hero">
-            <div class="container px-4 py-5">
-              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-lg-6">
-                  <img src="images/cupcakes-2.jpg" class="mx-lg img-fluid" alt="Images of cupcakes on plate">
-                </div>
-                <div class="col-lg-6">
-                  <h1 class="mb-3">Perfect for every occasion</h1>
-                  <p>At Toronto Cupcake, every bite is a celebration! From classic vanilla to decadent chocolate ganache, our cupcakes are baked fresh daily using the finest ingredients. Perfect for any occasion or just because!</p>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-secondary btn-lg px-5 me-md-2 text-white"><a href=""></a></button>
-                  </div>
+          
+          <div class="container px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                <img src="images/cupcakes-2.jpg" class="mx-lg img-fluid" alt="images of cupcakes on plate">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="mb-3">Perfect for every occasion</h1>
+                <p>At Toronto Cupcake, every bite is a celebration! From classic vanilla to decadent chocolate ganache, our cupcakes are baked fresh daily using the finest ingredients. Perfect for any occasion or just because!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <a href="shop.html" class="btn btn-secondary text-white">Shop Now!</a>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+
+        </section>
+
+        <section id="logo-banner">
+
+          <div class="bg-light">
+            <div class="container px-4">
+              <img src="images/cocacola-logo.svg" alt="coca cola logo">
+              <img src="images/spotify-logo.svg" alt="spotify logo">
+              <img src="images/android-logo.svg" alt="android logo">
+              <img src="images/versace-logo.svg" alt="versace logo">
+              <img src="images/toyota-logo.svg" alt="toyota logo">
+              <img src="images/ibm-logo.svg" alt="ibm logo">
+              <img src="images/bmo-logo.svg" alt="bmo logo">
+            </div>
+          </div>
+
+        </section>
         
         
         <section id="services">
             
-            <div id="service-cards" class="d-flex container px-4 py-5">
+          
+          <div class="container px-4">
+
+            <h2>Services</h2>
+
+            <div id="service-cards" class="d-flex py-5">
+              
                 <div class="card text-center" style="width: 18rem;">
                     <h5 class="card-title text-uppercase text-primary pt-3">Shop</h5>
                     <div class="card-body">
-                    <img src="images/cupcakes-1.jpg" class="card-img" alt="Image of cupcakes on stands">
+                    <img src="images/cupcakes-1.jpg" class="card-img" alt="image of cupcakes on stands">
                     <p class="card-text pt-3">Discover a delightful assortment of freshly baked cupcakes, perfect for any occasion. From classic flavours to unique seasonal creations, shop now and find the perfect one for you!</p>
                     <a href="shop.html" class="btn btn-secondary">Shop Now!</a>
                     </div>
@@ -73,7 +99,7 @@
                 <div class="card text-center" style="width: 18rem;">
                     <h5 class="card-title text-uppercase text-primary pt-3">About</h5>
                     <div class="card-body">
-                    <img src="images/icing-on-cupcake.jpg" class="card-img" alt="Image of cupcakes on stands">
+                    <img src="images/icing-on-cupcake.jpg" class="card-img" alt="image of cupcakes on stands">
                     <p class="card-text pt-3">Our cupcakes are designed to bring a smile to your face. Learn more about our sweet adventure, and let’s create some delicious memories together!</p>
                     <a href="about.html" class="btn btn-secondary">Learn More</a>
                     </div>
@@ -82,12 +108,15 @@
                 <div class="card text-center" style="width: 18rem;">
                     <h5 class="card-title text-uppercase text-primary pt-3">Contact</h5>
                     <div class="card-body">
-                    <img src="images/toronto-city.jpg" class="card-img" alt="Image of cupcakes on stands">
+                    <img src="images/toronto-city.jpg" class="card-img" alt="image of cupcakes on stands">
                     <p class="card-text pt-3">We’d love to hear from you! For inquiries, special orders, or to learn more about our delicious cupcakes, click here to reach out!</p>
                     <a href="#" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
             </div>
+
+          </div>
+
                 
         </section>
 
@@ -105,15 +134,15 @@
                 </div>
 
                 <div id="store-hours">
-                    <p class="text-uppercase">Store Hours</p>
+                    <h6 class="text-uppercase">Store Hours</h6>
                     <p>Mon–Sat: 7am – 10pm
                     Sunday: 7am – 10pm
                     (deliveries for 2 dozen or more)</p>
                 </div>
 
                 <div id="contact-info">
-                    <a href="#"><img src="images/email-icon.svg" alt="email icon">inquiry@torontocupcake.com</a>
-                    <a href="#"><img src="images/phone-icon.svg" alt="phone icon">+1–877–334–9468</a>
+                    <img src="images/email-icon.svg" alt="email icon">inquiry@torontocupcake.com
+                    <img src="images/phone-icon.svg" alt="phone icon">+1–877–334–9468
                 </div>
             </div> 
         </div>
