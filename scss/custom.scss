@@ -22,7 +22,6 @@ $h6-font-size: 1rem;
 
 $headings-color: $primary;
 
-
 // navigation:
 $navbar-nav-link-padding-x: 1.5rem;
 $navbar-light-color: $primary;
@@ -32,7 +31,10 @@ $navbar-font: "Poppins" sans-serif;
 
 // cards:
 $card-border-color: $primary;
+$card-border-radius: 1rem;
 $card-bg: $light;
+$card-spacer-x: 0rem;
+$card-spacer-y: 0rem;
 
 // buttons:
 $btn-padding-y: 0.1rem;
@@ -41,7 +43,7 @@ $btn-font-weight: bold;
 $btn-border-radius: 0.75rem;
 
 
-img {
+#logo-banner img {
     max-width: 60px;
 }
 
@@ -52,6 +54,11 @@ img {
 #icon {
     max-width: 35px
 }
+
+#social {
+    max-width: 80px;
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
