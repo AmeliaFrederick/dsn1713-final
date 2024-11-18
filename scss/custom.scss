@@ -52,10 +52,6 @@ $box-shadow-lg: 0 1rem 3rem rgba(#ef8bce, .175);
     max-width: 60px;
 }
 
-#logo {
-    max-width: 80px;
-}
-
 #icon {
     max-width: 35px
 }
@@ -63,14 +59,6 @@ $box-shadow-lg: 0 1rem 3rem rgba(#ef8bce, .175);
 #social {
     max-width: 80px;
 }
-
-.carousel-img {
-    max-width: 10%;
-}
-
-
-
-
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";

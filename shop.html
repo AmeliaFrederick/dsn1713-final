@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="shop.html">Shop Now!</a>
+                  <a class="nav-link active fw-semibold" href="shop.html">Shop Now!</a>
                 </li>
                 <li class="nav-item me-3">
                   <a class="nav-link" href="about.html">About</a>
@@ -70,37 +70,41 @@
       <section id="best-sellers">
 
 
-        <div class="container px-4">
+        <div class="container px-4 border-primary border-bottom border-2 border-opacity-50">
 
           <h2 class="py-5">Best Sellers</h2>
         
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/fudge-sundae-cupcake.jpg" class="" alt="image of fudge sundae cupcake">
+          <div class="row justify-content-center">
+            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-4 bg-light" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img id="carousel-img" src="images/fudge-sundae-cupcake.jpg" class="img-fluid" alt="image of fudge sundae cupcake">
+                </div>
+                <div class="carousel-item">
+                  <img id="carousel-img" src="images/oreo-cupcake.jpg" class="img-fluid" alt="image of oreo cupcake">
+                </div>
+                <div class="carousel-item">
+                  <img id="carousel-img" src="images/vanilla-strawberry-cupcake.jpg" class="img-fluid" alt="image of vanilla strawberry cupcake">
+                </div>
+                <div class="carousel-item">
+                  <img id="carousel-img" src="images/vanilla-flower-cupcake.jpg" class="img-fluid" alt="image of vanilla cupcake with flower on top">
+                </div>
+                <div class="carousel-item">
+                  <img id="carousel-img" src="images/peanut-butter-cupcake.jpg" class="img-fluid" alt="image of peanut butter cupcake">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/oreo-cupcake.jpg" class="" alt="image of oreo cupcake">
-              </div>
-              <div class="carousel-item">
-                <img src="images/vanilla-strawberry-cupcake.jpg" class="" alt="image of vanilla strawberry cupcake">
-              </div>
-              <div class="carousel-item">
-                <img src="images/vanilla-flower-cupcake.jpg" class="" alt="image of vanilla cupcake with flower on top">
-              </div>
-              <div class="carousel-item">
-                <img src="images/peanut-butter-cupcake.jpg" class="" alt="image of peanut butter cupcake">
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+
+          
 
         </div>
 
@@ -109,7 +113,7 @@
       </section>
 
       
-        <section id="always-available" class="container px-4">
+        <section id="always-available" class="container px-4 border-primary border-bottom border-2 border-opacity-50">
 
           <h2 class="py-5">Always Available</h2>
 
@@ -222,7 +226,7 @@
           </div>
           
           <div class="container d-flex justify-content-center">
-            <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+            <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
           </div>
           
 
@@ -231,7 +235,7 @@
       </section>
 
       
-      <section id="holidays" class="container px-4">
+      <section id="holidays" class="container px-4 border-primary border-bottom border-2 border-opacity-50">
 
         <h2 class="py-5">Holidays</h2>
 
@@ -289,14 +293,14 @@
           </div>
         
         <div class="container d-flex justify-content-center">
-          <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+          <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
         </div>
         
 
       </section>
 
 
-      <section id="events" class="container px-4">
+      <section id="events" class="container px-4 border-primary border-bottom border-2 border-opacity-50">
 
         <h2 class="py-5">Events</h2>
 
@@ -354,7 +358,7 @@
           </div>
         
         <div class="container d-flex justify-content-center">
-          <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+          <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
         </div>
         
 
