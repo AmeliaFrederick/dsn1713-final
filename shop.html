@@ -10,7 +10,7 @@
  
  <body>
     
-  <header class="sticky-top border-bottom border-2 border-primary">
+  <header class="sticky-top border-bottom border-2 border-primary shadow">
         
     <nav class="navbar navbar-expand-lg bg-light border fs-6 fw-medium">
           <div class="container px-4">
@@ -42,13 +42,13 @@
 
     <main>
 
-      <div class="container px-4 d-flex">
+      <div class="container px-4">
         <h1 class="py-5">Shop</h1>
 
         <div class="btn-group row" role="group" aria-label="Button group with nested dropdown">
           
-          <div class="btn-group col-6" role="group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="btn-group col-8" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" style="width: 300px;" data-bs-toggle="dropdown" aria-expanded="false">
               Sort
             </button>
             <ul class="dropdown-menu bg-light">
@@ -57,13 +57,18 @@
               <li><a class="dropdown-item" href="#">Events</a></li>
               <li><a class="dropdown-item" href="#">Custom</a></li>
             </ul>
+
+            <button type="button" class="btn btn-light px-4" style="width: 100px;"><img id="icon" src="images/sliders-icon.svg" alt="slider icon"></button>
+
+            <div class="btn btn-light d-flex" style="width: 300px;"><input class="form-control bg-light border-light" style="width: 100px;" type="search" placeholder="Search" aria-label="Search"><img id="icon" class="col offset-1" src="images/search-icon.svg" alt=search icon><form class="d-flex" role="search">
+            </form></div>
+
           </div>
           
-          <button type="button" class="col-3 btn btn-light px-4"><img id="icon" src="images/sliders-icon.svg" alt="slider icon"></button>
-          <button type="button" class="col-3 btn btn-light"><img id="icon" src="images/search-icon.svg" alt=search icon></button>
-        
-          
         </div>
+
+          
+
       </div>
       
       
@@ -75,8 +80,8 @@
           <h2 class="py-5">Best Sellers</h2>
         
           <div class="row justify-content-center">
-            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-4 bg-light" data-bs-ride="carousel">
-              <div class="carousel-inner">
+            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-3 " data-bs-ride="carousel">
+              <div class="carousel-inner border border-2 border-primary">
                 <div class="carousel-item active">
                   <img id="carousel-img" src="images/fudge-sundae-cupcake.jpg" class="img-fluid" alt="image of fudge sundae cupcake">
                 </div>
@@ -123,13 +128,19 @@
               
               <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
                 <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Chocolate Flower</h5>
+                
                 <div class="card-body">
                   <img src="images/chocolate-flower-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of chocolate cupcake with flower on top">
+                    
                     <div class="d-flex align-items-top mx-3">
                       <p class="card-text pt-3 pe-3">Chocolate cupcake topped with a vanilla cream cheese frosting and a chocolate flower.</p>
                       <p class="fw-bold text-primary pt-3">$3.75</p>
                     </div>
-                  <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 ">Add to Cart</a>
+
+                    <div class="d-flex justify-content-center align-self-end">
+                      <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                    </div>
+
                 </div>
               </div>
 
