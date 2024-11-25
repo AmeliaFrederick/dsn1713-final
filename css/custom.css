@@ -1,22 +1,59 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-#logo-banner img {
-  max-width: 60px;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.star-icon {
+  color: #FFB100;
 }
 
-#logo {
-  max-width: 80px;
+#t-logo {
+  max-width: 70px;
 }
 
-#icon {
+.add-to-cart::before {
+  font-family: "Material Icons";
+  content: "shopping_cart";
+  vertical-align: -10%;
+}
+
+.banner-logo {
+  max-width: 100px;
+}
+
+#social-media {
   max-width: 35px;
 }
 
-#social {
-  max-width: 80px;
+.email-icon::before {
+  font-family: "Material Icons";
+  content: "mail";
+  color: #FFB100;
+  font-size: 40px;
+  vertical-align: -23%;
+  padding-right: 10px;
+}
+
+.phone-icon::before {
+  font-family: "Material Icons";
+  content: "call";
+  color: #FFB100;
+  font-size: 40px;
+  vertical-align: -23%;
+  padding-right: 10px;
+}
+
+.search-icon {
+  color: #FFB100;
+}
+
+.filter-icon {
+  color: #EF8BC5;
+}
+
+.down-arrow-icon {
+  color: #EF8BC5;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 /*!
@@ -3266,7 +3303,7 @@ textarea.form-control-lg {
 
 .btn-link {
   --bs-btn-font-weight: 400;
-  --bs-btn-color: var(--bs-link-color);
+  --bs-btn-color: #FEE9EE;
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
   --bs-btn-hover-color: var(--bs-link-hover-color);
@@ -4317,8 +4354,8 @@ textarea.form-control-lg {
 }
 
 .card {
-  --bs-card-spacer-y: 0rem;
-  --bs-card-spacer-x: 0rem;
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-title-color: ;
   --bs-card-subtitle-color: ;
@@ -4327,8 +4364,8 @@ textarea.form-control-lg {
   --bs-card-border-radius: 1rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(1rem - (var(--bs-border-width)));
-  --bs-card-cap-padding-y: 0rem;
-  --bs-card-cap-padding-x: 0rem;
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
   --bs-card-cap-color: ;
   --bs-card-height: ;

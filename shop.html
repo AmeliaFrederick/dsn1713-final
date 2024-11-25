@@ -14,23 +14,25 @@
         
     <nav class="navbar navbar-expand-lg bg-light border fs-6 fw-medium">
           <div class="container px-4">
-            <a class="navbar-brand" href="index.html"><img id="logo" src="images/toronto-cupcake-logo.png" alt="toronto cupcake logo"></a>
+            <a class="navbar-brand" href="index.html"><img id="t-logo" src="images/toronto-cupcake-logo.png" alt="toronto cupcake logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active fw-semibold" href="shop.html">Shop Now!</a>
+                  <a class="nav-link active fw-semibold" aria-current="page" href="shop.html">Shop Now!</a>
                 </li>
                 <li class="nav-item me-3">
                   <a class="nav-link" href="about.html">About</a>
                 </li>
-                <li>
-                  <button type="button" class="btn btn-primary text-light"><img id="icon" class="me-2 py-1" src="images/shopping-cart-icon.svg" alt="shopping cart icon">View Cart</button>
+                <li class="">
+                  <button type="button" class="btn btn-primary text-light">
+                  <p class="add-to-cart mb-0 py-2">Add to Cart</p>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -45,10 +47,11 @@
       <div class="container px-4">
         <h1 class="py-5">Shop</h1>
 
-        <div class="btn-group row" role="group" aria-label="Button group with nested dropdown">
+        <div>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
           
-          <div class="btn-group col-8" role="group">
-            <button type="button" class="btn btn-primary dropdown-toggle" style="width: 300px;" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle text-start" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">
               Sort
             </button>
             <ul class="dropdown-menu bg-light">
@@ -58,14 +61,17 @@
               <li><a class="dropdown-item" href="#">Custom</a></li>
             </ul>
 
-            <button type="button" class="btn btn-light px-4" style="width: 100px;"><img id="icon" src="images/sliders-icon.svg" alt="slider icon"></button>
+            <button type="button" class="btn btn-light px-4" style="width: 70px;"><span class="filter-icon material-icons">filter_list</span></button>
 
-            <div class="btn btn-light d-flex" style="width: 300px;"><input class="form-control bg-light border-light" style="width: 100px;" type="search" placeholder="Search" aria-label="Search"><img id="icon" class="col offset-1" src="images/search-icon.svg" alt=search icon><form class="d-flex" role="search">
+            <div class="btn btn-light d-flex" style="width: 160px;"><input class="form-control bg-light border-light" style="width: 100px;" type="search" placeholder="Search" aria-label="Search"><span class="search-icon material-icons">search</span><form class="d-flex" role="search">
             </form></div>
 
           </div>
           
         </div>
+      </div>
+
+        
 
           
 
@@ -129,7 +135,7 @@
               <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
                 <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Chocolate Flower</h5>
                 
-                <div class="card-body">
+                <div class="card-body p-0">
                   <img src="images/chocolate-flower-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of chocolate cupcake with flower on top">
                     
                     <div class="d-flex align-items-top mx-3">
@@ -137,7 +143,7 @@
                       <p class="fw-bold text-primary pt-3">$3.75</p>
                     </div>
 
-                    <div class="d-flex justify-content-center align-self-end">
+                    <div class="d-flex justify-content-center">
                       <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
                     </div>
 
@@ -146,37 +152,47 @@
 
               <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
                 <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Vanilla Flower</h5>
-                <div class="card-body">
+                <div class="card-body p-0">
                   <img src="images/vanilla-flower-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of vanilla cupcake with flower on top">
                     <div class="d-flex align-items-top mx-3">
                       <p class="card-text pt-3 pe-3">Vanilla cupcake topped with vanilla frosting and a hand crafted fondant flower.</p>
                       <p class="fw-bold text-primary pt-3">$3.75</p>
                     </div>
-                  <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                    <div class="container d-flex justify-content-center my-auto">
+                      <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                    </div>
+
+                  
                 </div>
               </div>
           
               <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
                 <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Chocolate Caramel</h5>
-                <div class="card-body">
+                <div class="card-body p-0">
                   <img src="images/chocolate-sprinkle-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of chocolate caramel cupcake">
                     <div class="d-flex align-items-top mx-3">
                       <p class="card-text pt-3 pe-3">Chocolate cupcake filled with creamy Dulce de leche filling, covered with vanilla icing and topped with caramel crisp pearls.</p>
                       <p class="fw-bold text-primary pt-3">$3.75</p>
                     </div>
-                  <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                    </div>
+
                 </div>
               </div>
           
               <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
                 <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Vanilla Caramel</h5>
-                <div class="card-body">
+                <div class="card-body p-0">
                   <img src="images/vanilla-sprinkle-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of vanilla caramel cupcake">
                     <div class="d-flex align-items-top mx-3">
                       <p class="card-text pt-3 pe-3">Vanilla cupcake filled with creamy Dulce de leche filling, covered with vanilla icing and topped with caramel crisp pearls.</p>
                       <p class="fw-bold text-primary pt-3">$3.75</p>
                     </div>
-                  <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                    </div>
+
                 </div>
               </div>
             </div>
@@ -186,49 +202,61 @@
 
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Chocolate Coconut</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/chocolate-coconut-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of chocolate cupcake with coconut on top">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Chocolate cupcake with vanilla frosting topped with flaked coconut.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
 
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Vanilla Coconut</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/vanilla-coconut-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of vanilla cupcake with coconut on top">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Vanilla cupcake with vanilla frosting topped with flaked coconut.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
           
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Red Velvet</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/red-velvet-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of red velvet cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Classic US southern red velvet cupcake with a vanilla cream cheese frosting topped with red and white chocolate curls.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
           
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Vanilla Lemon</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/vanilla-lemon-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of vanilla lemon cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Vanilla cupcake filled with lemon custard topped with cream cheese frosting and our own in-bakery made jelly lemon slice.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
           </div>
@@ -237,7 +265,7 @@
           </div>
           
           <div class="container d-flex justify-content-center">
-            <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+            <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><span class="down-arrow-icon material-icons">arrow_downward</span></button>
           </div>
           
 
@@ -256,55 +284,67 @@
             
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Oh Canada!</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/canada-day-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of canada day cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Oh Canada! A red velvet cupcake topped with vanilla frosting and a fondant maple leaf.</p>
                     <p class="fw-bold text-primary pt-3">$4.50</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 ">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
 
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">St-Patty's Day</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/stpatty-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of st-patty's day cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Chocolate or vanilla cupcake with green or vanilla frosting topped with a lucky fondant shamrock.</p>
                     <p class="fw-bold text-primary pt-3">$4.50</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
         
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Easter</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/easter-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of easter carrot cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Carrot cupcake topped with vanilla frosting and a fondant carrot.</p>
                     <p class="fw-bold text-primary pt-3">$4.50</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
         
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Frosty</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/frosty-snowman-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of frosty the snowman cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Chocolate or vanilla cupcake with vanilla frosting, topped with a miniature marshmallow Frosty the Snowman!</p>
                     <p class="fw-bold text-primary pt-3">$4.50</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
           </div>
         
         <div class="container d-flex justify-content-center">
-          <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+          <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><span class="down-arrow-icon material-icons">arrow_downward</span></button>
         </div>
         
 
@@ -321,55 +361,67 @@
             
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Pride</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/pride-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of pride cupcake with rainbow flag on top">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Chocolate or vanilla cupcake topped with vanilla icing and a fondant pride flag.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 ">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
 
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Jazz Festival</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/music-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of jazz festival cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">A chocolate or vanilla cupcake topped with vanilla frosting and a chocolate saxophone. Perfect for the Beaches Jazz Festival!</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
         
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Film Festival</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/theatre-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of film festival cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">A chocolate cupcake with Madagascar bourbon vanilla frosting topped with a edible set of comedy tragedy masks.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
         
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Weddings</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/wedding-custom-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of wedding cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Make your special day a little sweeter with our cupcakes! Let us help you create a beautiful cupcake display that you’ll love!</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
           </div>
         
         <div class="container d-flex justify-content-center">
-          <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+          <button type="button" class="btn btn-light mt-4 p-1 mb-3 border border-primary"><span class="down-arrow-icon material-icons">arrow_downward</span></button>
         </div>
         
 
@@ -386,55 +438,67 @@
             
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Birthday Special</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/birthday-custom-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of custom birthday cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Custom birthday cupcake! Send us a design or picture and we will reproduce in chocolate or vanilla.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 ">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
 
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Face Cupcake</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/music-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of cupcake with personalized photo on top">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Personalized photo cupcake! Highlight that great smile on top of any of our cupcakes!</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
         
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Just For Kids</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/cookie-monster-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of cookie monster cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Cookie monster, Elmo and a host of other characters. When ordering let us know who you would like to see.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
         
             <div class="card col-lg-3 col-md-2 col-sm-1 m-4 p-0" style="width: 17rem;">
               <h5 class="border-bottom border-3 border-primary card-title text-primary py-2 m-0 text-center">Custom Cupcake</h5>
-              <div class="card-body">
+              <div class="card-body p-0">
                 <img src="images/custom-challenge-cupcake.jpg" class="card-img shadow rounded-top-0" alt="image of custom cupcake">
                   <div class="d-flex align-items-top mx-3">
                     <p class="card-text pt-3 pe-3">Challenge us! Custom means just that. Bring your idea and we will turn it into a cupcake.</p>
                     <p class="fw-bold text-primary pt-3">$3.75</p>
                   </div>
-                <a href="#" class="btn btn-secondary py-1 text-white col-6 offset-3 mb-2">Add to Cart</a>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary py-1 text-white">Add to Cart</a>
+                  </div>
+
               </div>
             </div>
           </div>
         
         <div class="container d-flex justify-content-center">
-          <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><img id="icon" class="" src="images/down-arrow.svg" alt="down arrow button"></button>
+          <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><span class="down-arrow-icon material-icons">arrow_downward</span></button>
         </div>
         
 
@@ -450,25 +514,25 @@
         <div class="container px-4">
           <div class="d-flex py-5 row justify-content-center align-items-center">
               
-            <div id="social-media" class="col-4 text-center">
-                <a href="#"><img id="icon" class="mx-5" src="images/x-logo.svg" alt="x logo"></a>
-                <a href="#"><img id="icon" class="mx-5" src="images/instagram-logo.svg" alt="instagram logo"></a>
-                <a href="#"><img id="icon" class="mx-5" src="images/facebook-logo.svg" alt="facebook logo"></a>
+            <div class="col-lg-4 text-center">
+                <a href="#"><img id="social-media" class="" src="images/x-logo.svg" alt="x logo"></a>
+                <a href="#"><img id="social-media" class="" src="images/instagram-logo.svg" alt="instagram logo"></a>
+                <a href="#"><img id="social-media" class="" src="images/facebook-logo.svg" alt="facebook logo"></a>
             </div>
 
-            <div id="store-hours" class="col-4 text-center px-5">
+            <div id="store-hours" class="col-lg-4 text-center">
                 <h6 class="text-uppercase pb-2">Store Hours</h6>
                 <p>Mon–Sat: 7am – 10pm
                 <p>Sunday: 7am – 10pm</p>
                 <p>(deliveries for 2 dozen or more)</p>
             </div>
 
-              <div id="contact-info" class="col-4 px-5">
-                <div class="pb-4">
-                  <img id="icon" class="me-2" src="images/email-icon.svg" alt="email icon">inquiry@torontocupcake.com
+              <div id="contact-info" class="col-lg-4">
+                <div class="pb-2 d-flex">
+                  <p class="email-icon d-sm-none d-md-block small">inquiry@torontocupcake.com</p>
                 </div>  
-                <div>
-                  <img id="icon" class="me-2" src="images/phone-icon.svg" alt="phone icon">+1–877–334–9468
+                <div id="contact-icon" class="d-flex">
+                  <p class="phone-icon d-sm-none d-md-block small">+1–877–334–9468</p>
                 </div>
               </div>
 

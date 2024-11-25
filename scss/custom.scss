@@ -7,7 +7,6 @@
 
 // colours:
 $primary: #EF8BC5;
-$primary: rgba(#ef8bce);
 $secondary: #FFB100;
 $light: #FEE9EE;
 
@@ -45,15 +44,63 @@ $btn-link-color: $light;
 $btn-hover-color: $secondary;
 
 // icons:
-.material-icons .star-icon {
-    color: #FFB100 !important;
+.star-icon {
+    color: $secondary;
 }
 
+#t-logo {
+    max-width: 70px;
+}
 
+.add-to-cart::before {
+    font-family: "Material Icons";
+    content: "shopping_cart";
+    vertical-align: -10%;
+}
 
 // additional css:
 
-  
+.banner-logo {
+    max-width: 100px;
+}
+
+#social-media{
+    max-width: 35px;
+}
+
+.email-icon::before {
+    font-family: "Material Icons";
+    content: "mail";
+    color: $secondary;
+    font-size: 40px;
+    vertical-align: -23%;
+    padding-right: 10px;
+}
+   
+.phone-icon::before {
+    font-family: "Material Icons";
+    content: "call";
+    color: $secondary;
+    font-size: 40px;
+    vertical-align: -23%;
+    padding-right: 10px;
+}
+
+.search-icon {
+    color: $secondary;
+}
+
+.filter-icon {
+    color: $primary;
+}
+
+.down-arrow-icon {
+    color: $primary;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
