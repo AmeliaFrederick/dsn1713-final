@@ -1,10 +1,9 @@
-
-// fonts:
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-// @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 
 // colours:
 $primary: #EF8BC5;
@@ -45,12 +44,16 @@ $btn-border-radius: 0.75rem;
 $btn-link-color: $light;
 $btn-hover-color: $secondary;
 
-
+// icons:
+.material-icons .star-icon {
+    color: #FFB100 !important;
+}
 
 
 
 // additional css:
 
+  
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
