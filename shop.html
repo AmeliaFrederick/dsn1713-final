@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link fw-semibold" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active fw-semibold" aria-current="page" href="shop.html">Shop Now!</a>
+                  <a class="nav-link active" href="shop.html">Shop Now!</a>
                 </li>
                 <li class="nav-item me-3">
                   <a class="nav-link" href="about.html">About</a>
@@ -44,32 +44,39 @@
 
     <main>
 
-      <div class="container px-4">
+      <div class="container px-4 d-flex justify-content-between align-items-center">
         <h1 class="py-5">Shop</h1>
 
-        <div>
+
           <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-primary dropdown-toggle text-start" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">
+
+            <div class="bg-light row py-2">
+               <div class="btn-group col-6" role="group">
+            <button type="button" class="btn btn-primary text-white text-center dropdown-toggle text-start" data-bs-toggle="dropdown" aria-expanded="false">
               Sort
             </button>
-            <ul class="dropdown-menu bg-light">
+
+              <ul class="dropdown-menu bg-light">
               <li><a class="dropdown-item" href="#always-available">Always Available</a></li>
               <li><a class="dropdown-item" href="#holidays">Holidays</a></li>
               <li><a class="dropdown-item" href="#events">Events</a></li>
               <li><a class="dropdown-item" href="#custom">Custom</a></li>
-            </ul>
+              </ul>
 
-            <button type="button" class="btn btn-light px-4" style="width: 70px;"><span class="filter-icon material-icons">filter_list</span></button>
+            </div>
+         
 
-            <div class="btn btn-light d-flex" style="width: 160px;"><input class="form-control bg-light border-light" style="width: 100px;" type="search" placeholder="Search" aria-label="Search"><span class="search-icon material-icons">search</span><form class="d-flex" role="search">
+            
+
+            <button type="button" class="btn btn-light col p-0"><span class="filter-icon material-icons">filter_list</span></button>
+
+            <div class="btn btn-light d-flex align-items-center col-4"><input class="form-control bg-light border-light" type="search" placeholder="Search" aria-label="Search"><span class="search-icon material-icons">search</span><form class="d-flex" role="search">
             </form></div>
 
           </div>
           
         </div>
-      </div>
+
 
         
 
@@ -80,6 +87,7 @@
       
       <section id="best-sellers">
 
+        <!-- ACTUALLLLL -->
 
         <div class="container px-4 border-primary border-bottom border-2 border-opacity-50">
 
@@ -115,8 +123,7 @@
             </div>
           </div>
 
-          
-
+  
         </div>
 
         
@@ -512,27 +519,27 @@
         
       <div class="bg-light border-primary border-top border-2">
         <div class="container px-4">
-          <div class="d-flex py-5 row justify-content-center align-items-center">
+          <div class="d-flex py-5 row align-items-center">
               
             <div class="col-lg-4 text-center">
-                <a href="#"><img id="social-media" class="" src="images/x-logo.svg" alt="x logo"></a>
-                <a href="#"><img id="social-media" class="" src="images/instagram-logo.svg" alt="instagram logo"></a>
-                <a href="#"><img id="social-media" class="" src="images/facebook-logo.svg" alt="facebook logo"></a>
+                <a href="#"><img id="social-media" class="me-3" src="images/x-logo.svg" alt="x logo"></a>
+                <a href="#"><img id="social-media" class="mx-3" src="images/instagram-logo.svg" alt="instagram logo"></a>
+                <a href="#"><img id="social-media" class="ms-3" src="images/facebook-logo.svg" alt="facebook logo"></a>
             </div>
 
             <div id="store-hours" class="col-lg-4 text-center">
                 <h6 class="text-uppercase pb-2">Store Hours</h6>
-                <p>Mon–Sat: 7am – 10pm
+                <p>Mon-Sat: 7am – 10pm
                 <p>Sunday: 7am – 10pm</p>
                 <p>(deliveries for 2 dozen or more)</p>
             </div>
 
-              <div id="contact-info" class="col-lg-4">
-                <div class="pb-2 d-flex">
-                  <p class="email-icon d-sm-none d-md-block small">inquiry@torontocupcake.com</p>
+              <div id="contact-info" class="col-lg-4 mt-3 ps-5">
+                <div class="">
+                  <p class="email-icon small m-0">inquiry@torontocupcake.com</p>
                 </div>  
-                <div id="contact-icon" class="d-flex">
-                  <p class="phone-icon d-sm-none d-md-block small">+1–877–334–9468</p>
+                <div id="contact-icon" class="">
+                  <p class="phone-icon small">+1–877–334–9468</p>
                 </div>
               </div>
 
