@@ -41,7 +41,7 @@ $btn-padding-x: 1rem;
 $btn-font-weight: bold;
 $btn-border-radius: 0.75rem;
 $btn-link-color: $light;
-$btn-hover-color: $secondary;
+
 
 // icons:
 .star-icon {
@@ -59,21 +59,19 @@ $btn-hover-color: $secondary;
     font-size: 25px;
 }
 
-.email-icon::before {
+.email-icon {
     font-family: "Material Icons";
-    content: "mail";
+    content: "email";
     color: $secondary;
     font-size: 40px;
-    vertical-align: -23%;
     padding-right: 10px;
 }
 
-.phone-icon::before {
+.call-icon {
     font-family: "Material Icons";
     content: "call";
     color: $secondary;
     font-size: 40px;
-    vertical-align: -23%;
     padding-right: 10px;
 }
 
@@ -83,12 +81,14 @@ $btn-hover-color: $secondary;
 
 .filter-icon {
     color: $primary;
+    font-size: 40px;
 }
 
 .down-arrow-icon {
     color: $primary;
     font-weight: bold;
     font-size: 40px;
+    vertical-align: -13%;
 }
 
 // additional css:
@@ -101,6 +101,45 @@ $btn-hover-color: $secondary;
 #social-media {
     max-width: 35px;
 }
+
+input {
+    color: #fff;
+}
+
+$focus-ring-color: $primary;
+$input-btn-focus-color: $focus-ring-color;
+
+#always-available .card .btn {
+    position: absolute;
+    bottom: 2%;
+}
+
+#holidays .card .btn {
+    position: absolute;
+    bottom: 2%;
+}
+
+#events .card .btn {
+    position: absolute;
+    bottom: 2%;
+}
+
+#custom .card .btn {
+    position: absolute;
+    bottom: 2%;
+}
+
+.card img {
+    max-height: 300px;
+}
+
+.tour-item {
+    background-color: #FFB100
+}
+
+
+
+
 
 // .carousel-inner:before {
 //     position: absolute;
