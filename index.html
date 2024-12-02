@@ -21,7 +21,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+              <div class="collapse navbar-collapse justify-content-lg-end justify-content-sm-center" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                   <li class="nav-item">
                     <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home</a>
@@ -29,7 +29,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="shop.html">Shop Now!</a>
                   </li>
-                  <li class="nav-item me-3">
+                  <li class="nav-item me-lg-3 me-sm-0">
                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="">
@@ -69,16 +69,30 @@
         <section id="logo-banner">
 
           <div class="bg-light">
-            <div class="container px-4">
-              <div class="justify-content-center py-3 d-flex">
-                <img class="banner-logo mx-5" src="images/cocacola-logo.svg" alt="coca cola logo">
-                <img class="banner-logo mx-5" src="images/bmw-logo.svg" alt="bmw logo">
-                <img class="banner-logo mx-5" src="images/spotify-logo.svg" alt="spotify logo">
-                <img class="banner-logo mx-5" src="images/android-logo.svg" alt="android logo">
-                <img class="banner-logo mx-5" src="images/versace-logo.svg" alt="versace logo">
-                <img class="banner-logo mx-5" src="images/toyota-logo.svg" alt="toyota logo">
-                <img class="banner-logo mx-5" src="images/ibm-logo.svg" alt="ibm logo">
-                <img class="banner-logo mx-5" src="images/bmo-logo.svg" alt="bmo logo">
+            <div class="container">
+              <div class="d-sm-flex justify-content-center align-items-center py-3 row flex-nowrap">
+                <div class=" col">
+                  <img class="banner-logo" src="images/cocacola-logo.svg" alt="coca cola logo">
+                </div>
+                <div class=" col">
+                  <img class="banner-logo" src="images/spotify-logo.svg" alt="coca cola logo">
+                </div>
+                <div class="col">
+                  <img class="banner-logo" src="images/android-logo.svg" alt="coca cola logo">
+                </div>
+                <div class=" col">
+                  <img class="banner-logo" src="images/versace-logo.svg" alt="coca cola logo">
+                </div>
+                <div class="col">
+                  <img class="banner-logo" src="images/toyota-logo.svg" alt="coca cola logo">
+                </div>
+                <div class="col">
+                  <img class="banner-logo" src="images/ibm-logo.svg" alt="coca cola logo">
+                </div>
+                <div class="col">
+                  <img class="banner-logo" src="images/bmo-logo.svg" alt="coca cola logo">
+                </div>
+
               </div>
             </div>
           </div>
@@ -93,11 +107,11 @@
 
             <h2 class="pt-5">Services</h2>
 
-            <div id="service-cards" class="d-flex container-fluid row-lg  py-3 mb-5 justify-content-center align-items-center">
+            <div id="service-cards" class="d-lg-flex row-lg mx-5 py-3 mb-5 justify-content-center align-items-center">
               
-                <div class="mt-5">
+                <div class="mt-5 col-lg-4">
                   <h5 class="card-title text-uppercase text-primary py-3 text-center">About</h5>
-                  <div class="card col-lg-3 text-center mx-3 my-auto" style="width: 18rem;">
+                  <div class="card  text-center mx-3 my-auto" >
                       <div class="card-body p-0">
                       <img src="images/icing-on-cupcake.jpg" class="card-img rounded-bottom-0 shadow" style="height: 343px;" alt="image of cupcakes on stands">
                       <p class="card-text pt-3 small mx-4">Our cupcakes are designed to bring a smile to your face. Learn more about our sweet adventure, and let’s create some delicious memories together!</p>
@@ -107,9 +121,9 @@
                 </div>
               
                 
-                <div class="">
-                  <h5 class="card-title text-uppercase text-primary py-3 text-center">Shop</h5>
-                  <div class="card col-lg-6 text-center mx-5 my-auto" style="width: 22rem;">
+                <div class="col-lg-6 mt-sm-5">
+                  <h5 class="card-title text-uppercase text-primary py-3  text-center">Shop</h5>
+                  <div class="card text-center mx-5 my-auto">
                     <div class="card-body p-0">
                     <img src="images/cupcakes-1.jpg" class="card-img-top rounded-bottom-0 shadow" alt="image of cupcakes on stands">
                     <p class="card-text pt-3 mx-3">Discover a delightful assortment of freshly baked cupcakes, perfect for any occasion. From classic flavours to unique seasonal creations, shop now and find the perfect one for you!</p>
@@ -119,9 +133,9 @@
                 </div>
 
 
-                <div class="mt-5">
+                <div class="mt-5 col-lg-4">
                   <h5 class="card-title text-uppercase text-primary py-3 text-center">Contact</h5>
-                    <div class="card col-lg-3 text-center mx-3 my-auto" style="width: 18rem;">
+                    <div class="card  text-center mx-3 my-auto" >
                       <div class="card-body p-0">
                       <img src="images/toronto-city.jpg" class="card-img rounded-bottom-0 shadow" alt="image of cupcakes on stands">
                       <p class="card-text pt-3 small mx-4">We’d love to hear from you! For inquiries, special orders, or to learn more about our delicious cupcakes, click here to reach out!</p>
@@ -152,19 +166,19 @@
                   <a href="#"><img id="social-media" class="ms-3" src="images/facebook-logo.svg" alt="facebook logo"></a>
               </div>
 
-              <div id="store-hours" class="col-lg-4 text-center order-lg-2 order-sm-1 mb-lg-2 mb-sm-3">
+              <div id="store-hours" class="col-lg-4 text-center order-lg-2 order-sm-1 ">
                   <h6 class="text-uppercase pb-2">Store Hours</h6>
                   <p>Mon-Sat: 7am – 10pm
                   <p>Sunday: 7am – 10pm</p>
                   <p>(deliveries for 2 dozen or more)</p>
               </div>
 
-                <div id="contact-info" class="col-lg-4 ps-lg-5 order-lg-3 order-sm-2 d-flex justify-content-center d-md-block mt-sm-2">
+                <div id="contact-info" class="col-lg-4 ps-lg-5 order-lg-3 order-sm-2 d-flex justify-content-center d-md-block mt-sm-2 mb-sm-4">
                   <div class="d-flex align-items-center pb-lg-3 pb-sm-0">
                     <span class="email-icon material-icons">email</span><p class="small m-0 d-sm-none d-md-block">inquiry@torontocupcake.com</p>
                   </div>  
                   <div id="contact-icon" class="d-flex align-items-center">
-                    <span class="call-icon material-icons">call</span><p class="small d-sm-none d-md-block mb-0">+1–877–334–9468</p>
+                    <span class="call-icon material-icons ps-sm-3 ps-lg-0">call</span><p class="small d-sm-none d-md-block mb-0">+1–877–334–9468</p>
                   </div>
                 </div>
 

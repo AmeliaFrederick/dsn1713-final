@@ -82,12 +82,12 @@ input {
   bottom: 2%;
 }
 
-.card img {
-  max-height: 300px;
+#always-available .card {
+  max-width: 300px;
 }
 
-.tour-item {
-  background-color: #FFB100;
+.navbar-toggler {
+  border-color: lightgreen;
 }
 
 /*!

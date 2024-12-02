@@ -129,41 +129,26 @@ $input-btn-focus-color: $focus-ring-color;
     bottom: 2%;
 }
 
-.card img {
-    max-height: 300px;
+#always-available .card {
+    max-width: 300px;
 }
 
-.tour-item {
-    background-color: #FFB100
+// .navbar-toggler-icon {
+//     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+//   }
+
+// .nav-item a {
+//     color: black !important;
+//   }
+
+// .navbar-toggler-icon
+// {
+//     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%239, 139, 197, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+// }
+
+.navbar-toggler {
+    border-color: lightgreen;
 }
-
-
-
-
-
-// .carousel-inner:before {
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     right: 82%;
-//     left: 0;
-//     content: "";
-//     display: block;
-//     background-color: #fff;
-//     z-index: 2;
-// }
-
-// .carousel-inner:after {
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     right: 0;
-//     left: 82%;
-//     content: "";
-//     display: block;
-//     background-color: #fff;
-//     z-index: 2;
-// }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
