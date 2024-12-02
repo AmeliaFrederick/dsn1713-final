@@ -32,7 +32,7 @@
                 </li>
                 <li class="">
                   <button type="button" class="btn btn-primary text-light">
-                  <p class="add-to-cart mb-0 py-2">Add to Cart</p>
+                  <p class="add-to-cart mb-0 py-1">View Cart</p>
                   </button>
                 </li>
               </ul>
@@ -44,14 +44,30 @@
 
     <main>
 
-      <h1 class="container px-4 pt-5">About</h1>
+      <h1 class="container px-4 pt-5 text-sm-center text-lg-start">About</h1>
 
       <section id="who-we-are">
         
         <div class="container px-4 border-primary border-bottom border-2 border-opacity-50">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="row flex-lg-row-reverse align-items-center justify-content-center ">
             
-            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-6" data-bs-ride="carousel">
+            <section id="slider" class="mx-4 mt-4 mb-5 col">
+              <input type="radio" name="slider" id="s1" checked>
+              <input type="radio" name="slider" id="s2">
+              <input type="radio" name="slider" id="s3">
+
+              <label for="s1" id="slide1">
+                <img src="images/store-owner.jpg" alt="image of store owner Michelle">
+              </label>
+              <label for="s2" id="slide2">
+                <img src="images/cupcakes-3.jpg" alt="image of cupcakes">
+              </label>
+              <label for="s3" id="slide3">
+                <img src="images/cupcakes-4.jpg" alt="image of cupcakes on counter">
+              </label>
+            </section>
+
+            <!-- <div id="carouselExampleAutoplaying" class="carousel slide col-lg-6" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="images/store-owner.jpg" class="d-block w-100" alt="image of store owner Michelle">
@@ -71,12 +87,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
+            </div> -->
             
             <div class="col-lg-6 text-lg-start text-sm-center">
-              <h2 class="mb-3">Who we are</h2>
-              <div class="">
-                <p class="">Welcome to Toronto Cupcake! Founded in 2010, we are proud to be Toronto's leading destination for gourmet branded cupcakes. Whether you're celebrating a birthday, hosting a corporate event, or simply indulging in a sweet treat, our handcrafted cupcakes are made fresh daily using the finest ingredients. Explore our wide range of classic and seasonal flavours, and enjoy fast, reliable delivery across the GTA.</p>
+              <h2 class="my-3">Who we are</h2>
+              <div class="me-lg-2">
+                <p class="mb-5">Welcome to Toronto Cupcake! Founded in 2010, we are proud to be Toronto's leading destination for gourmet branded cupcakes. Whether you're celebrating a birthday, hosting a corporate event, or simply indulging in a sweet treat, our handcrafted cupcakes are made fresh daily using the finest ingredients. Explore our wide range of classic and seasonal flavours, and enjoy fast, reliable delivery across the GTA.</p>
               </div>
               
             </div>
@@ -91,14 +107,31 @@
         
         <div class="container px-4 border-primary border-bottom border-2 border-opacity-50">
 
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="row flex-lg-row-reverse align-items-center justify-content-center">
             
             <div class="col-lg-6 text-sm-center text-lg-start">
               <h2 class="mb-3">What we do</h2>
               <p>At Toronto Cupcake, we specialize in crafting delicious, handcrafted cupcakes that bring joy to every occasion. Our menu features a variety of flavours, from classic favourites to unique seasonal creations, all made with high-quality ingredients. Whether you're celebrating a birthday, wedding, or simply indulging in a sweet treat, our cupcakes are perfect for any moment. Place an order and discover your new favourite flavour!</p>
             </div>
 
-            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-6" data-bs-ride="carousel">
+            <section id="slider" class="mx-4 mt-4 mb-5 col">
+              
+              <input type="radio" name="slider" id="s4">
+              <input type="radio" name="slider" id="s5">
+              <input type="radio" name="slider" id="s1" checked>
+
+              <label for="s1" id="slide1">
+                <img src="images/engagement-cupcakes.jpg" alt="image of engagement cupcakes">
+              </label>
+              <label for="s4" id="slide4">
+                <img src="images/puppy-cupcakes.jpg" alt="image of mixed confetti cupcakes">
+              </label>
+              <label for="s5" id="slide5">
+                <img src="images/mixed-confetti-cupcakes.jpg" alt="image of dog styled cupcakes">
+              </label>
+            </section>
+
+            <!-- <div id="carouselExampleAutoplaying" class="carousel slide col-lg-6" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="images/engagement-cupcakes.jpg" class="d-block w-100" alt="image of store owner Michelle">
@@ -118,7 +151,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -140,79 +173,79 @@
               <div class="container testimonial-inner">
                 <div class="row gy-4 d-flex justify-content-center border-primary border-bottom border-2 border-opacity-50 pb-5">
 
-                      <div class="col-md-4 style-3">
-                          <div class="tour-item bg-light border border-primary border-2 rounded-4">
-                              <div class="tour-desc">
-                                  <div class=" m-3">
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                  </div>
-
-                                  <div class="tour-text mx-3 mb-3 d-flex">&ldquo;Best cupcakes in town! I’ve tried many different flavours, and each one has been fantastic. The lemon cupcake is a must-try— it’s refreshing and delicious! Plus, the presentation is always top-notch. Perfect for gifts or just treating yourself!&rdquo;</div>
-                                  
-                                  <div class="d-flex align-items-center ps-3 pt-2 pb-3">
-                                    <img id="testi" class="img-fluid col-1 rounded-5 me-2" src="images/testimonial-1.jpg" alt="image of testimonial person">
-                                    <div class="link-name d-flex justify-content-center">Samantha Powell</div>
-                                  </div>                                  
-                                  
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-4 style-3">
-                        <div class="tour-item bg-light border border-primary border-2 rounded-4">
-                            <div class="tour-desc">
-                                <div class=" m-3">
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                    <span class="star-icon material-icons">star</span>
-                                </div>
-
-                                <div class="tour-text mx-3 mb-lg-5 mb-sm-4 d-flex">&ldquo;I bought a dozen cupcakes for my girlfriend and she absolutely loved them! It was super easy to get and they brought a huge smile to her face, I will definitely be ordering more in the future.&rdquo;</div>
-                                
-                                <div class="d-flex align-items-center pt-2 pb-2 ps-3 mb-2">
-                                  <img id="testi" class="img-fluid col-1 rounded-5 me-2" src="images/testimonial-2.jpg" alt="image of testimonial person">
-                                  <div class="link-name d-flex justify-content-center">Thomas Jones</div>
-                                </div>                                  
-                                
+                <div class="col-md-4 style-3">
+                    <div class="tour-item bg-light border border-primary border-2 rounded-4">
+                        <div class="tour-desc">
+                            <div class=" m-3">
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
                             </div>
+
+                            <div class="tour-text mx-3 mb-3 d-flex">&ldquo;Best cupcakes in town! I’ve tried many different flavours, and each one has been fantastic. The lemon cupcake is a must-try— it’s refreshing and delicious! Plus, the presentation is always top-notch. Perfect for gifts or just treating yourself!&rdquo;</div>
+                            
+                            <div class="d-flex align-items-center ps-3 pt-2 pb-3">
+                              <img id="testi" class="img-fluid col-1 rounded-5 me-2" src="images/testimonial-1.jpg" alt="image of testimonial person">
+                              <div class="link-name d-flex justify-content-center">Samantha Powell</div>
+                            </div>                                  
+                            
                         </div>
                     </div>
-
-                    <div class="col-md-4 style-3">
-                      <div class="tour-item bg-light border border-primary border-2 rounded-4">
-                          <div class="tour-desc">
-                              <div class=" m-3">
-                                <span class="star-icon material-icons">star</span>
-                                <span class="star-icon material-icons">star</span>
-                                <span class="star-icon material-icons">star</span>
-                                <span class="star-icon material-icons">star</span>
-                                <span class="star-icon material-icons">star</span>
-
-                              </div>
-
-                              <div class="tour-text mx-3 mb-3 d-flex">&ldquo;Absolutely amazing cupcakes! Each one is a little work of art, and they taste even better than they look. I ordered a dozen for my daughter’s birthday, and the chocolate ganache was a huge hit! I’ll definitely be coming back for more.&rdquo;</div>
-                              
-                              <div class="d-flex align-items-center pt-2 pb-2 ps-3 mb-2">
-                                <img id="testi" class="img-fluid col-1 rounded-5 me-2" src="images/testimonial-3.jpg" alt="image of testimonial person">
-                                <div class="link-name d-flex justify-content-center">Patricia Harris</div>
-                              </div>                                  
-                              
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="container d-flex justify-content-center">
-                    <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><span class="down-arrow-icon material-icons">arrow_downward</span></button>
-                  </div>
-
                 </div>
 
+                <div class="col-md-4 style-3">
+                  <div class="tour-item bg-light border border-primary border-2 rounded-4">
+                      <div class="tour-desc">
+                          <div class=" m-3">
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
+                              <span class="star-icon material-icons">star</span>
+                          </div>
+
+                          <div class="tour-text mx-3 mb-lg-5 mb-sm-4 d-flex">&ldquo;I bought a dozen cupcakes for my girlfriend and she absolutely loved them! It was super easy to get and they brought a huge smile to her face, I will definitely be ordering more in the future.&rdquo;</div>
+                          
+                          <div class="d-flex align-items-center pt-2 pb-2 ps-3 mb-2">
+                            <img id="testi" class="img-fluid col-1 rounded-5 me-2" src="images/testimonial-2.jpg" alt="image of testimonial person">
+                            <div class="link-name d-flex justify-content-center">Thomas Jones</div>
+                          </div>                                  
+                          
+                      </div>
+                  </div>
               </div>
+
+              <div class="col-md-4 style-3">
+                <div class="tour-item bg-light border border-primary border-2 rounded-4">
+                    <div class="tour-desc">
+                        <div class=" m-3">
+                          <span class="star-icon material-icons">star</span>
+                          <span class="star-icon material-icons">star</span>
+                          <span class="star-icon material-icons">star</span>
+                          <span class="star-icon material-icons">star</span>
+                          <span class="star-icon material-icons">star</span>
+
+                        </div>
+
+                        <div class="tour-text mx-3 mb-3 d-flex">&ldquo;Absolutely amazing cupcakes! Each one is a little work of art, and they taste even better than they look. I ordered a dozen for my daughter’s birthday, and the chocolate ganache was a huge hit! I’ll definitely be coming back for more.&rdquo;</div>
+                        
+                        <div class="d-flex align-items-center pt-2 pb-2 ps-3 mb-2">
+                          <img id="testi" class="img-fluid col-1 rounded-5 me-2" src="images/testimonial-3.jpg" alt="image of testimonial person">
+                          <div class="link-name d-flex justify-content-center">Patricia Harris</div>
+                        </div>                                  
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+              <button type="button" class="btn btn-light mt-4 p-1 border border-primary"><span class="down-arrow-icon material-icons">arrow_downward</span></button>
+            </div>
+
+          </div>
+
+        </div>
 
 
       <section id="community">
@@ -257,15 +290,15 @@
                 <h6 class="text-uppercase pb-2">Store Hours</h6>
                 <p>Mon-Sat: 7am – 10pm
                 <p>Sunday: 7am – 10pm</p>
-                <p>(deliveries for 2 dozen or more)</p>
+                <p class="small">(deliveries for 2 dozen or more)</p>
             </div>
 
-              <div id="contact-info" class="col-lg-4 ps-lg-5 order-lg-3 order-sm-2 d-flex justify-content-center d-md-block mt-sm-2 mb-sm-4">
+              <div id="contact-info" class="col-lg-4 ps-lg-5 order-lg-3 order-sm-2 d-flex flex-wrap mt-sm-2 mb-sm-4 offset-md-5 offset-sm-5 offset-lg-0">
                 <div class="d-flex align-items-center pb-lg-3 pb-sm-0">
-                  <span class="email-icon material-icons">email</span><p class="small m-0 d-sm-none d-md-block">inquiry@torontocupcake.com</p>
+                  <span class="email-icon material-icons">email</span><p class="small m-0 d-sm-none d-md-none d-lg-block">inquiry@torontocupcake.com</p>
                 </div>  
                 <div id="contact-icon" class="d-flex align-items-center">
-                  <span class="call-icon material-icons ps-sm-3 ps-lg-0">call</span><p class="small d-sm-none d-md-block mb-0">+1–877–334–9468</p>
+                  <span class="call-icon material-icons ps-sm-3 ps-lg-0">call</span><p class="small d-sm-none d-md-none d-lg-block mb-0">+1–877–334–9468</p>
                 </div>
               </div>
 

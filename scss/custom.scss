@@ -42,7 +42,6 @@ $btn-font-weight: bold;
 $btn-border-radius: 0.75rem;
 $btn-link-color: $light;
 
-
 // icons:
 .star-icon {
     color: $secondary;
@@ -102,12 +101,7 @@ $btn-link-color: $light;
     max-width: 35px;
 }
 
-input {
-    color: #fff;
-}
-
-$focus-ring-color: $primary;
-$input-btn-focus-color: $focus-ring-color;
+// cards:
 
 #always-available .card .btn {
     position: absolute;
@@ -132,6 +126,143 @@ $input-btn-focus-color: $focus-ring-color;
 #always-available .card {
     max-width: 300px;
 }
+
+#holidays .card {
+    max-width: 300px;
+}
+
+#events .card {
+    max-width: 300px;
+}
+
+#custom .card {
+    max-width: 300px;
+}
+
+// carousels
+
+#slider {
+    position: relative;
+    width: 45%;
+    height: 32vw;
+    margin: 80px auto;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+
+#slider .slider {
+    position: relative;
+    width: 70%;
+    height: 32vw;
+    margin: 80px auto;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+
+#slider .who-slider #slider label, #slider label img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+  }
+
+#slider label,
+#slider label img {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+#s1:checked ~ #slide1,
+ #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+   #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5 {
+  box-shadow: 0 13px 26px rgba(239,139,197, 0.3), 0 12px 6px rgba(239,139,197, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked ~ #slide2,
+ #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+   #s4:checked ~ #slide5,
+    #s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(239,139,197, 0.3), 0 2px 2px rgba(239,139,197, 0.2);
+  transform: translate3d(20%, 0, -100px);
+}
+
+#s1:checked ~ #slide3,
+ #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+   #s4:checked ~ #slide1,
+    #s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(239,139,197, 0.4);
+  transform: translate3d(40%, 0, -250px);
+}
+
+#s1:checked ~ #slide4,
+ #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+   #s4:checked ~ #slide2,
+    #s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px rgba(239,139,197, 0.4);
+  transform: translate3d(-40%, 0, -250px);
+}
+
+#s1:checked ~ #slide5,
+ #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+   #s4:checked ~ #slide3,
+    #s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px rgba(239,139,197, 0.3), 0 2px 2px rgba(239,139,197, 0.2);
+  transform: translate3d(-20%, 0, -100px);
+}
+
+
+
+input[type=radio] {
+    position: relative;
+    top: 108%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
+  }
+
+input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+  }
+
+  input[type=radio]:checked {
+    opacity: 1;
+    accent-color: $primary; 
+  }
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
