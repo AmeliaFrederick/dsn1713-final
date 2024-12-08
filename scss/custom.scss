@@ -237,9 +237,10 @@ input[type=radio]:nth-child(5) {
     margin-right: 0px;
   }
 
-  input[type=radio]:checked {
+input[type=radio]:checked {
     opacity: 1;
     accent-color: $primary; 
   }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import 'animate.css';
